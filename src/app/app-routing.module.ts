@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+/**RUTAS**/
+import { loginRoute } from './auth/login/login.routing';
+
+const routes: Routes = [
+	loginRoute,
+
+
+	/*Redirec*/
+	{ path: '**', redirectTo: 'login', pathMatch: 'full' },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
