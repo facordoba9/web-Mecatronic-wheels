@@ -2,10 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 /**RUTAS**/
-import { loginRoute } from './auth/login/login.routing';
+import { loginRouting } from './auth/login/login.routing';
+import { coreRouting } from './core/core.routing';
 
 const routes: Routes = [
-	loginRoute,
+	loginRouting,
+
+	coreRouting,
 
 
 	/*Redirec*/

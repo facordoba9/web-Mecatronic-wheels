@@ -1,7 +1,6 @@
-import { Route, Routes } from '@angular/router';
-import { LoginComponent } from './login.component';
+import { Route } from '@angular/router';
 
-export const loginRoute: Route = {
+export const loginRouting: Route = {
 	path: 'login',
 	loadChildren: () => import('./login.routes'),
 }
